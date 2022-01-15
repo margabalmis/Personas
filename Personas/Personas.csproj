@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>assets\personas.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
@@ -88,9 +91,13 @@
     <Compile Include="user_control\NuevaPersonaUC.xaml.cs">
       <DependentUpon>NuevaPersonaUC.xaml</DependentUpon>
     </Compile>
+    <Compile Include="vista_modelo\AñadirNacionalidadWindowVM.cs" />
     <Compile Include="vista_modelo\ControlListaPersonasMV.cs" />
     <Compile Include="vista_modelo\ControlNuevaPersonaMV.cs" />
     <Compile Include="vista_modelo\MainWindowVM.cs" />
+    <Compile Include="WindowAñadirNacionalidad.xaml.cs">
+      <DependentUpon>WindowAñadirNacionalidad.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -108,6 +115,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="user_control\NuevaPersonaUC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowAñadirNacionalidad.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -138,6 +149,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\añadir.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="assets\personas.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

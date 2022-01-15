@@ -19,6 +19,11 @@ namespace Personas
         {
             return new ListadoPersonasUC();
         }
+        internal void CargarDialogoNacionalidad()
+        {
+            WindowAñadirNacionalidad nuevaVentana = new WindowAñadirNacionalidad();
+            nuevaVentana.ShowDialog();
+        }
     }
 }
 

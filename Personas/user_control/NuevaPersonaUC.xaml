@@ -30,9 +30,10 @@
                 ItemsSource="{Binding Path=Nacionalidades}"
                 SelectedItem="{Binding Path=Nacionalidad}"
                 Width="140"
+                Height="20"
                 Margin="8,0"></ComboBox>
             <Button
-                Command=""
+                Command="{Binding Path=VentanaAñadirNacionalidad}"
                 x:Name="AddNationality"
                 Width="20">+</Button>
         </StackPanel>
