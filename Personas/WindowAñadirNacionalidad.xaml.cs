@@ -28,10 +28,11 @@ namespace Personas
             this.DataContext = vmNacionalidad;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void AceptarButton_Click(object sender, RoutedEventArgs e)
         {
-            Guardar();
-            vmNacionalidad = true;
+            vmNacionalidad.GuardarNacionalidad();
+            DialogResult = true;
+
         }
     }
 }

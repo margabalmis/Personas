@@ -15,7 +15,7 @@ namespace Personas.vista_modelo
         ServicioNavegacion servicio;
 
         public RelayCommand NuevaPersonaCommand { get; }
-        public RelayCommand ListaPersonasCommand { get; }
+        public RelayCommand ListadoPersonasCommand { get; }
 
         private UserControl contenidoVista;
 
@@ -31,7 +31,7 @@ namespace Personas.vista_modelo
         {
             servicio = new ServicioNavegacion();
             NuevaPersonaCommand = new RelayCommand(CargarVistaNuevaPersona);
-            ListaPersonasCommand = new RelayCommand(CargarVistaListaPersonas);
+            ListadoPersonasCommand = new RelayCommand(CargarVistaListaPersonas);
 
         }
 

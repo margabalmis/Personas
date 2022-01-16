@@ -39,6 +39,7 @@
         </StackPanel>
 
         <Button
+            Command="{Binding Path=AñadirPersona}"
             x:Name="AceptarButton"
             Margin="8"
             Width="140"

@@ -84,6 +84,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Persona.cs" />
     <Compile Include="ServicioNavegacion.cs" />
     <Compile Include="user_control\ListadoPersonasUC.xaml.cs">
       <DependentUpon>ListadoPersonasUC.xaml</DependentUpon>
