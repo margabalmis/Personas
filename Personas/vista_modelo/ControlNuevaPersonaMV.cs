@@ -11,7 +11,7 @@ namespace Personas.vista_modelo
 {
     class ControlNuevaPersonaMV : ObservableObject
     {
-        private ServicioNavegacion servicio;
+        private readonly ServicioNavegacion servicio;
         public RelayCommand VentanaAñadirNacionalidad { get; }
         public RelayCommand AñadirPersona { get; }
 
@@ -26,8 +26,6 @@ namespace Personas.vista_modelo
         private void AddPerson()
         {
             Persona p = new Persona(Nombre, Edad, Nacionalidad);
-
-            //añadir a la lista
             Nombre = "";
             Edad = "";
             Nacionalidad = "";

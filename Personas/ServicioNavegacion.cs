@@ -10,6 +10,7 @@ namespace Personas
 {
     class ServicioNavegacion
     {
+        static ListadoPersonasUC listaPersonas = new ListadoPersonasUC();
         internal UserControl CargarVistaNuevaPersona()
         {
             return new NuevaPersonaUC();
@@ -17,7 +18,7 @@ namespace Personas
 
         internal UserControl CargarVistaListaPersonas()
         {
-            return new ListadoPersonasUC();
+            return listaPersonas;
         }
         internal void CargarDialogoNacionalidad()
         {
