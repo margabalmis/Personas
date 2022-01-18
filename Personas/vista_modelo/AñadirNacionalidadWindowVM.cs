@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Personas.vista_modelo
 {
-    class AñadirNacionalidadWindowVM : ObservableObject
+    class AñadirNacionalidadWindowVM : ObservableRecipient
     {
 
         public AñadirNacionalidadWindowVM()

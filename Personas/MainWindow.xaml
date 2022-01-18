@@ -35,6 +35,9 @@
             <Button
                 Command="{Binding Path=ListadoPersonasCommand}">
                 Listado de Personas</Button>
+            <Button
+                Command="{Binding Path=ConsultarPersonaCommand}">
+                Consultar Persona</Button>
         </StackPanel>
 
         <Border
